@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Product App</title>
+</head>
+<body>
+    <div>
+        <h2 Parent Authenticate ID</h2>
+        Student Id: <input type="text" id="studentId" size="16" value="2013020001000003" /><br />
+        Username: <input type="text" id="username"  size="32" value="gonesh.lal@gmail.com"/><br />
+        Password: <input type="text" id="password"  size="32" value="X}VJ]c1B"/><br />
+        Facebook Id: <input type="text" id="facebookid" size="32" /><br />
+        Google Id: <input type="text" id="googleid" size="32" /><br />
+        <input type="button" value="Sign In" onclick="signin();" />
+        <p id="quicksoft" />
+    </div>
+
+    <div>
+        <h2 Teacher Authenticate ID</h2>
+        Teacher Id: <input type="text" id="studentId1" size="16" value="0001" /><br />
+        Username: <input type="text" id="username1" size="32" value="sushmita.sen@gmail.com" /><br />
+        Password: <input type="text" id="password1" size="32" value="y)UZ%0Rl" /><br />
+        Facebook Id: <input type="text" id="facebookid1" size="32" /><br />
+        Google Id: <input type="text" id="googleid1" size="32" /><br />
+        <input type="button" value="Sign In" onclick="signin1();" />
+        <p id="quicksoft" />
+    </div>
+
+    <div>
+        <h2 Driver Authenticate ID</h2>
+        Driver Id: <input type="text" id="studentId2" size="16" value="0001" /><br />
+        Username: <input type="text" id="username2" size="32" value="sujoy.dutta@gmail.com" /><br />
+        Password: <input type="text" id="password2" size="32" value="mYBwrB-7" /><br />
+        Facebook Id: <input type="text" id="facebookid2" size="32" /><br />
+        Google Id: <input type="text" id="googleid2" size="32" /><br />
+        <input type="button" value="Sign In" onclick="signin2();" />
+        <p id="quicksoft" />
+    </div>
+
+    <div>
+        <h2  Parent Dashboard</h2>
+        Unique Id: <input type="text" id="uniq_id" size="36" value="{0df38bd3-fbbd-4f53-baa0-323d1f55016d}" /><br />
+        Username: <input type="text" id="user_id" size="32" value="patrick.ismail@gmail.com" /><br />
+        <input type="button" value="Dashboard" onclick="parent_dashboard();" />
+        <p id="quicksoft" />
+    </div>
+
+    <div>
+        <h2 Teacher Dashboard</h2>
+        Unique Id: <input type="text" id="uniq_id1" size="36" value="{412dfba8-310c-4ed1-92c7-e1a2607c9599}" /><br />
+        Username: <input type="text" id="user_id1" size="32" value="sushmita.sen@gmail.com" /><br />
+        <input type="button" value="Dashboard" onclick="teacher_dashboard();" />
+        <p id="quicksoft" />
+    </div>
+    <div>
+        <h2 Driver Dashboard</h2>
+        Unique Id: <input type="text" id="uniq_id2" size="36" value="{2b050d6e-8cd3-4dd5-bfc8-dbf476fde589}" /><br />
+        Username: <input type="text" id="user_id2" size="32" value="sujoy.dutta@gmail.com" /><br />
+        <input type="button" value="Dashboard" onclick="driver_dashboard();" />
+        <p id="quicksoft" />
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+    var uri = 'api/quicksoftuser';
+
+    $(document).ready(function () {
+      // Send an AJAX request
+      /*$.getJSON(uri)
+          .done(function (data) {
+            // On success, 'data' contains a list of products.
+            $.each(data, function (key, item) {
+              // Add a list item for the product.
+              $('<li>', { text: formatItem(item) }).appendTo($('#users'));
+            });
+          });*/
+    });
+
+    function formatItem(item) {
+ //       return item.Name + ': $' + item.Price;
+        return item.FirstName + " " + item.MiddleName + item.LastName + ' id:' + item.Id;
+    }
+
+    function find() {
+      var id = $('#prodId').val();
+      $.getJSON(uri + '/' + id)
+          .done(function (data) {
+            $('#product').text(formatItem(data));
+          })
+          .fail(function (jqXHR, textStatus, err) {
+            $('#product').text('Error: ' + err);
+          });
+    }
+    function signin() {
+        var id = $('#studentId').val();
+        var username = $('#username').val();
+        var password = $('#password').val();
+        var fbid = $('#facebookid').val();
+        var gid = $('#googleid').val();
+        //var str = '{"UserType": " ' + '"PA"' + ', "Id": ' + id + ', "FacebookId": ' + '"' + fbid + '"' + ', "GoogleId": ' + '"' + gid + '"' + ', "UserId":' + '"' + username + '"' + ', "Password":' + '"' + password + '"}';
+        var data = {
+            UserType: 'PA',
+            Id: id,
+            FacebookId: fbid,
+            GoogleId: gid,
+            UserId: username,
+            Password: password
+        };
+
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/loginuser',
+            dataType: 'json',
+            async: false,
+            //json object to sent to the authentication url
+            //data: JSON.stringify(str),
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey);
+            }
+        });
+    }
+    function signin1() {
+        var id = $('#studentId1').val();
+        var username = $('#username1').val();
+        var password = $('#password1').val();
+        var fbid = $('#facebookid1').val();
+        var gid = $('#googleid1').val();
+        //var str = '{"UserType": " ' + '"PA"' + ', "Id": ' + id + ', "FacebookId": ' + '"' + fbid + '"' + ', "GoogleId": ' + '"' + gid + '"' + ', "UserId":' + '"' + username + '"' + ', "Password":' + '"' + password + '"}';
+        var data = {
+            UserType: 'TE',
+            Id: id,
+            FacebookId: fbid,
+            GoogleId: gid,
+            UserId: username,
+            Password: password
+        };
+
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/loginuser',
+            dataType: 'json',
+            async: false,
+            //json object to sent to the authentication url
+            //data: JSON.stringify(str),
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey);
+            }
+        });
+    }
+    function signin2() {
+        var id = $('#studentId2').val();
+        var username = $('#username2').val();
+        var password = $('#password2').val();
+        var fbid = $('#facebookid2').val();
+        var gid = $('#googleid2').val();
+        //var str = '{"UserType": " ' + '"PA"' + ', "Id": ' + id + ', "FacebookId": ' + '"' + fbid + '"' + ', "GoogleId": ' + '"' + gid + '"' + ', "UserId":' + '"' + username + '"' + ', "Password":' + '"' + password + '"}';
+        var data = {
+            UserType: 'DR',
+            Id: id,
+            FacebookId: fbid,
+            GoogleId: gid,
+            UserId: username,
+            Password: password
+        };
+
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/loginuser',
+            dataType: 'json',
+            async: false,
+            //json object to sent to the authentication url
+            //data: JSON.stringify(str),
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey + " RespCode:" +result.RespCode);
+            }
+        });
+    }
+
+    function parent_dashboard() {
+        
+        var id = $('#uniq_id').val();
+        var username = $('#user_id').val();
+        var data = {
+            UniqKey: id,
+            UserId: username
+        };
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/dboardparent',
+            dataType: 'json',
+            async: false,
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey + " RespCode:" + result.RespCode);
+            }
+        });
+    }
+
+    function teacher_dashboard() {
+
+        var id = $('#uniq_id1').val();
+        var username = $('#user_id1').val();
+        var data = {
+            UniqKey: id,
+            UserId: username
+        };
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/dboardteacher',
+            dataType: 'json',
+            async: false,
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey + " RespCode:" + result.RespCode);
+            }
+        });
+    }
+    function driver_dashboard() {
+
+        var id = $('#uniq_id2').val();
+        var username = $('#user_id2').val();
+        var data = {
+            UniqKey: id,
+            UserId: username
+        };
+        $.ajax({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: uri + '/dboarddriver',
+            dataType: 'json',
+            async: false,
+            data: data,
+            success: function (result, success) {
+                alert("Unique id:" + result.UniqKey + " RespCode:" + result.RespCode);
+            }
+        });
+    }
+    function authenticate(userName, password) {
+        $.ajax
+        ({
+            type: "POST",
+            //the url where you want to sent the userName and password to
+            url: 'username:password@link to the server/update',
+            dataType: 'json',
+            async: false,
+            //json object to sent to the authentication url
+            data: JSON.stringify('{"userName": "' + userName + '", "password" : "' + password + '"}'),
+            success: function () {
+
+                alert("Thanks!");
+            }
+        })
+    }
+    </script>
+</body>
+</html>

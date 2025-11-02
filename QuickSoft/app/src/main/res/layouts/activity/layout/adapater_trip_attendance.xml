@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:stroke_width="0.6dp"
+        app:stroke_color="@color/darkSlateBlue"
+        android:background="@color/colorWhite"
+        app:shape_mode="circle" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextViewBlackBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/imgProfile"
+        android:textSize="20sp" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnAttendance"
+        style="@style/FBButtonTheme"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:text="Present" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorBlack"/>
+</RelativeLayout>

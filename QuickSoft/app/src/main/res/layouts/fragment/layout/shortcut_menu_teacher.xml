@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quicksoft.school.view.fab.FloatingActionMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    fab:menu_animationDelayPerItem="0"
+    fab:menu_shadowColor="#444"
+    fab:menu_colorNormal="@color/fabColor"
+    fab:menu_colorPressed="#F2AB00"
+    fab:menu_colorRipple="#D99200">
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorPressed="@color/colorWhite"
+        fab:fab_label="@string/dashboard"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_size="mini" />
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_label="@string/attendance"
+        fab:fab_size="mini" />
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_label="@string/task"
+        fab:fab_size="mini" />
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_label="@string/notice"
+        fab:fab_size="mini" />
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_label="@string/project"
+        android:visibility="gone"
+        fab:fab_size="mini" />
+
+    <com.quicksoft.school.view.fab.FloatingActionButton
+        android:id="@+id/fabWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/miniFabColor"
+        fab:fab_label="@string/wallet"
+        android:visibility="gone"
+        fab:fab_size="mini" />
+</com.quicksoft.school.view.fab.FloatingActionMenu>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">QickkSoft</string>
+    <string name="logTag">Manas</string>
+
+    <!-- Dialog Screen -->
+    <string name="dialog_error">Error</string>
+    <string name="dialog_alert">Alert</string>
+    <string name="dialog_wait">Please wait...</string>
+    <string name="dialog_no_network">\nNetwork is not available. Please check your internet connection.\n</string>
+    <string name="dialog_alert_delete">\nAre you sure want to delete?\n</string>
+    <string name="dialog_alert_update">\nAre you sure want to update?\n</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">CANCEL</string>
+
+    <!--LoginActivity-->
+    <string name="registration">Don\'t have an account? Sign Up</string>
+    <string name="hintDriver">Driver ID</string>
+    <string name="hintTeacher">Teacher ID</string>
+    <string name="hintParent">Student ID</string>
+
+    <!--MainActivity-->
+    <string name="dashboard">Dashboard</string>
+    <string name="attendance">Attendance</string>
+    <string name="payment">Payments</string>
+    <string name="track">Track Bus</string>
+    <string name="task">Tasks</string>
+    <string name="marksheet">Marksheet</string>
+    <string name="notice">Notice</string>
+    <string name="about">About</string>
+    <string name="govbody">Governing Body</string>
+    <string name="faculty">Faculties</string>
+    <string name="jobs">Jobs</string>
+    <string name="project">Project</string>
+    <string name="wallet">Wallet</string>
+    <string name="logout">Log Out</string>
+
+
+    <!--  Facebook Info   -->
+    <string name="facebook_app_id">285889782199204</string>
+
+    <!--  Dummy Info   -->
+    <string name="dummy_parent_name">Animesh Mitra</string>
+    <string name="dummy_student_name">Aakash Mitra</string>
+    <string name="dummy_teacher_name">Renuka Sen</string>
+    <string name="dummy_driver_name">Amit Das</string>
+
+
+    <string name="about_us">Calcutta Public School, Kalikapur branch(affiliation no. WB214) and Calcutta Public School, Bidhan Park branch (affiliation no. WB 344) has both I.C.S.E. as well as I.S.C. courses running where students can choose subjects of their interest. The I.S.C. segment offers courses in Science, Humanities and Commerce where pupils can choose their subjects as per the Councils guidelines.
+
+        All formal school subjects are taught in class. The medium of instruction is English.
+
+        There is no formal examination for the kindergarten pupils. They are assessed on a continuous comprehensive basis modeled on a specially designed development profile. The focus is on the overall development of the child.
+
+        Promotion is granted on the basis of the pupils performance throughout the year for all classes. All year around senior classes take full length unit tests ,conducted intermittently in the academic year which has two terms. Senior classes take full length block tests for their assessment. The method of evaluating and reporting the pupils progress is modern, scientific and transparent providing a clear insight of the childs academic as well as extra-curricular advancement.</string>
+<string name="mission">This will propagate the culture of India and its holistic values in surroundings driven by modern technology and a focused pursuit of the intellect. The focus is on nurturing well-rounded personalities with the skills to excel in the world they will inherit in time.
+
+We have a team of teachers and academicians amidst us who are highly experienced and are regarded as institutions in themselves. Their constant supervision shall ensure that the quality shall never be compromised. The school follows a 360° model wherein all the people involved shall work towards one mission - "Educating Students for Life". The main mission of CPS is to envisage that students will learn, develop and grow in the competitive arena in Today and Tomorrow.</string>
+</resources>

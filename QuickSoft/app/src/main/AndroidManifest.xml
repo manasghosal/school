@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.quicksoft.school">
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <activity android:name=".activity.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <!--<activity android:name=".activity.PasswordActivity"/>-->
+        <activity android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.LoginFacebookActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.LoginGoogleActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.OTPActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.parent.MainParentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.parent.TaskDetailsParentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <activity android:name=".activity.parent.NoticeDetailsParentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+
+        <activity android:name=".activity.teacher.MainTeacherActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.teacher.IndividualAttendanceTeacherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <activity android:name=".activity.teacher.GroupAttendanceTeacherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <activity android:name=".activity.teacher.SummeryAttendanceTeacherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"/>
+        <activity android:name=".activity.driver.MainDriverActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.driver.TripAttendanceDriverActivity"
+            android:theme="@style/AppThemeNormal"/>
+
+
+        <service android:name=".service.LocationService" />
+
+        <!-- Crop Image -->
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+
+        <!-- Facebook -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <!-- MAP -->
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAJq-O9orMEhNLJHBTS799LpzC8vMjEuDo"/>
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+
+</manifest>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backsplash">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvYear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <TextView
+                        style="@style/TextViewBlackBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Outstanding Fees" />
+
+                    <TextView
+                        android:id="@+id/tvDueFee"
+                        style="@style/TextViewPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rs 0"
+                        android:textColor="@color/lipstick"
+                        android:textSize="28sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvYear"
+                style="@style/TextViewBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn1"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn2"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn3"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn2"
+                app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn4"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn5"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn6"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn4"
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn6"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn5"
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn7"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn8"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn8"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn9"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn7"
+                app:layout_constraintTop_toBottomOf="@+id/btn5" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn9"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn8"
+                app:layout_constraintTop_toBottomOf="@+id/btn6" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn10"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn11"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn7" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn11"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn10"
+                app:layout_constraintTop_toBottomOf="@+id/btn8" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn12"
+                style="@style/OkButtonTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginTop="32dp"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn11"
+                app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn11">
+
+                <LinearLayout
+                    android:id="@+id/llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <include layout="@layout/shortcut_menu_parent" />
+</RelativeLayout>

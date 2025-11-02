@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="viewPagerWidth">240dp</dimen>
+    <dimen name="viewPagerHeight">320dp</dimen>
+</resources>
