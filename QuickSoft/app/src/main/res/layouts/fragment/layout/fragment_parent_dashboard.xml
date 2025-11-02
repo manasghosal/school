@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/backsplash">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/TextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:text="Class"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:text="Section"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/TextViewBlackBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:text="Roll No"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/tvClass"
+                    style="@style/TextViewPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="V"
+                    app:layout_constraintEnd_toEndOf="@+id/textView1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                <TextView
+                    android:id="@+id/tvSection"
+                    style="@style/TextViewPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="A"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/tvRollNo"
+                    style="@style/TextViewPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="10"
+                    app:layout_constraintEnd_toEndOf="@+id/textView3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+                    android:id="@+id/imgStudentProfile"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.32999998"
+                    app:stroke_color="@color/almostBlack38"
+                    app:stroke_width="3dp"
+                    app:shape_mode="circle" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextViewBlackBold"
+                    android:layout_width="fill_parent"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/nliveo_black"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgStudentProfile"
+                    app:layout_constraintVertical_bias="0.120000005" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewWhite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/darkSlateBlue"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:text="Attendance" />
+
+                    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        app:compactCalendarCurrentDayBackgroundColor="@color/colorAccent"
+                        app:compactCalendarMultiEventIndicatorColor="#fff"
+                        app:compactCalendarTargetHeight="250dp"
+                        app:compactCalendarTextSize="12sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewWhite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/darkSlateBlue"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:text="Fees" />
+
+                    <TextView
+                        android:id="@+id/tvPayment"
+                        style="@style/TextViewBlackBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:layout_margin="12dp"
+                        android:gravity="center"
+                        android:text="You don't have any outstanding payments" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/shortcut_menu_parent"/>
+</RelativeLayout>

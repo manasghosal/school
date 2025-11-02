@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backsplash">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/fLayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+
+        android:id="@+id/imgProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite"
+        app:stroke_color="@color/almostBlack38"
+        app:stroke_width="2dp"
+        app:shape_mode="circle"/>
+
+        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+            android:id="@+id/imgProfileEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ico_layer_edit"
+            android:background="@color/colorWhite"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            app:stroke_color="@color/almostBlack38"
+            app:stroke_width="2dp"
+            app:shape_mode="circle"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/TextViewBlackBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_below="@id/fLayout"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        style="@style/TextViewBlackBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Change password?"/>
+</RelativeLayout>

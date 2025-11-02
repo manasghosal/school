@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="userType">
+        <item>Parent</item>
+        <item>Teacher</item>
+        <item>Driver</item>
+    </string-array>
+</resources>

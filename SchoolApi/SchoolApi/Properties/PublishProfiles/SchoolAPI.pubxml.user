@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbgIfQdLZrkqYgC1lwId23AAAAAACAAAAAAAQZgAAAAEAACAAAAD6uPWyWlt9MKlsQ5hmJVIoSV+IZie2Z4KfjzLhdW90CAAAAAAOgAAAAAIAACAAAAAqwHJuWlpd3en67fhMRSYMlEvh3iRUclVXv5VPv+KEgCAAAAD/S25BlHUbmZGWLqfNUvJ9ghOvUTtOVCbmvJRHvvLTH0AAAAAlMKsmjgt/Db87jNptAL+h3dC7R46hkqa13cLAk85aw9CyPftUnoy3ko4Vc/OEnBPJcmO+LN5BlLDSkdHZZ1ty</EncryptedPassword>
+    <_PublishTargetUrl>ftp://182.50.151.39/www.schoolapi.agsl.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>09/29/2018 09:02:18</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>09/29/2018 09:02:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/SchoolApi.dll">
+      <publishTime>09/29/2018 09:01:56</publishTime>
+    </File>
+    <File Include="bin/SchoolApi.pdb">
+      <publishTime>09/27/2018 22:51:25</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>08/25/2018 00:53:33</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/29/2018 00:23:20</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/29/2018 09:02:09</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/SchoolAPI.pubxml">
+      <publishTime>09/27/2018 22:21:18</publishTime>
+    </File>
+    <File Include="roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="SchoolApi.csproj">
+      <publishTime>09/27/2018 22:25:36</publishTime>
+    </File>
+    <File Include="SchoolApi.csproj.user">
+      <publishTime>09/27/2018 22:25:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/29/2018 09:02:04</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>08/17/2018 21:34:03</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>08/17/2018 21:34:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

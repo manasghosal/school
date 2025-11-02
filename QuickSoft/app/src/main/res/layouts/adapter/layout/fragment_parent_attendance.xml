@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backsplash">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/tvYear"
+                    style="@style/TextViewBlackBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn1"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/btn6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvYear" />
+
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn4"
+                    app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn5"
+                    app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn8"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn7"
+                    app:layout_constraintTop_toBottomOf="@+id/btn5" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn8"
+                    app:layout_constraintTop_toBottomOf="@+id/btn6" />
+
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn11"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn7" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn12"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn10"
+                    app:layout_constraintTop_toBottomOf="@+id/btn8" />
+
+                <com.quicksoft.school.view.ProgressButton
+                    android:id="@+id/btn12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/btn11"
+                    app:layout_constraintTop_toBottomOf="@+id/btn9" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn11"
+                    app:layout_constraintVertical_bias="0.51">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tvMonth"
+                            style="@style/TextViewBlackBold"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="25sp" />
+
+                        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+                            android:id="@+id/calendarView"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            app:compactCalendarCurrentDayBackgroundColor="@color/colorAccent"
+                            app:compactCalendarMultiEventIndicatorColor="#fff"
+                            app:compactCalendarTargetHeight="250dp"
+                            app:compactCalendarTextSize="12sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/shortcut_menu_parent" />
+</RelativeLayout>

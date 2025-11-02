@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#536dfe</color>
+    <color name="colorPrimaryDark">#0043ca</color>
+    <color name="colorAccent">#8f9bff</color>
+
+    <color name="colorBlack">#181818</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#A0A0A0</color>
+    <color name="colorGreen">#558B2F</color>
+    <color name="darkSlateBlue">#1f465e</color>
+    <color name="brownishGrey">#666666</color>
+    <color name="paleRed">#e64843</color>
+    <color name="dullRed">#bb4540</color>
+    <color name="almostBlack87">#DD0d161a</color>
+    <color name="almostBlack38">#610d161a</color>
+    <color name="silver">#d0d3d9</color>
+    <color name="lipstick">#d92429</color>
+    <color name="white54">#89FFFFFF</color>
+    <color name="white38">#61FFFFFF</color>
+    <color name="almostBlack98">#1E272C</color>
+
+
+    <color name="okButtonColor">#673ab7</color>
+    <color name="fabColor">#673ab7</color>
+    <color name="miniFabColor">#666666</color>
+
+    <!--Map route -->
+    <color name="colorRouteLine">#d92429</color>
+</resources>

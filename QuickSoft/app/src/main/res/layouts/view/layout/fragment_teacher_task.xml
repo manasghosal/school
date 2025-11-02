@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backsplash">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnClass"
+            style="@style/OkButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:text="Select Class" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnSection"
+            style="@style/OkButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:text="Select Section" />
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnDate"
+        style="@style/OkButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Select Date" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnStudent"
+        style="@style/OkButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDate"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Select Student" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTopic"
+        style="@style/EditTextPrimary"
+        android:layout_below="@id/btnStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="15"
+        android:hint="Topic / Heading" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editDesc"
+        android:layout_below="@id/editTopic"
+        style="@style/EditTextPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:minLines="4"
+        android:layout_marginStart="16dp"
+        android:ems="15"
+        android:hint="Notes / Tasks" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnAttachment"
+            style="@style/FBButtonTheme"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="4dp"
+            android:visibility="gone"
+            android:layout_marginStart="8dp"
+            android:text="Attachment" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnPostTask"
+            style="@style/SubmitButton"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Post Task"/>
+    </LinearLayout>
+    <include layout="@layout/shortcut_menu_teacher" />
+</RelativeLayout>

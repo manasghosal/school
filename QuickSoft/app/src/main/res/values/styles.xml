@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar ">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AppThemeNormal" parent="Theme.AppCompat.Light.NoActionBar ">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--====================== ToolBar Theme ======================-->
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <!--====================== Primary TextView Theme ======================-->
+    <style name="TextViewPrimary" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="fontFamily">@font/samsung</item>
+    </style>
+
+    <style name="TextViewWhite" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/samsung</item>
+    </style>
+
+    <style name="TextViewBlackBold" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/samsung</item>
+    </style>
+
+
+
+    <!--====================== Primary EditText Theme ======================-->
+    <style name="EditTextPrimary" parent="Widget.AppCompat.EditText">
+        <item name="met_baseColor">@color/colorBlack</item>
+        <item name="met_primaryColor">@color/colorBlack</item>
+        <item name="met_textColorHint">@color/colorGrey</item>
+        <item name="met_underlineColor">@color/colorGrey</item>
+        <item name="fontFamily">@font/samsung</item>
+        <item name="met_floatingLabel">highlight</item>
+    </style>
+
+
+    <!--====================== Button Theme ======================-->
+
+    <!--Primary button theme-->
+    <style name="ButtonPrimary" parent="Widget.AppCompat.Button">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/samsung</item>
+        <item name="fb_radius">10dp</item>
+    </style>
+
+    <!--Ok button theme-->
+    <style name="OkButtonTheme" parent="ButtonPrimary">
+        <!--<item name="pressed_color">@color/colorPrimaryDark</item>-->
+        <item name="fb_defaultColor">@color/darkSlateBlue</item>
+        <item name="fb_focusColor">@color/almostBlack98</item>
+        <item name="fb_textColor">@color/colorWhite</item>
+    </style>
+
+    <!--Send button theme-->
+    <style name="SubmitButton" parent="ButtonPrimary">
+        <item name="fb_defaultColor">@color/colorGreen</item>
+        <item name="fb_focusColor">@color/almostBlack98</item>
+        <item name="fb_textColor">@color/colorWhite</item>
+    </style>
+
+    <!--Cancel button theme-->
+    <style name="GrayButton" parent="ButtonPrimary">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:colorButtonNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--FB button theme-->
+    <style name="FBButtonTheme" parent="ButtonPrimary">
+        <!--<item name="pressed_color">@color/colorPrimaryDark</item>-->
+        <item name="fb_defaultColor">@color/okButtonColor</item>
+        <item name="fb_focusColor">@color/almostBlack98</item>
+        <item name="fb_textColor">@color/colorWhite</item>
+    </style>
+
+    <!--Google+ button theme-->
+    <style name="GoogleButtonTheme" parent="ButtonPrimary">
+        <!--<item name="pressed_color">@color/colorPrimaryDark</item>-->
+        <item name="fb_defaultColor">@color/dullRed</item>
+        <item name="fb_focusColor">@color/almostBlack98</item>
+        <item name="fb_textColor">@color/colorWhite</item>
+    </style>
+</resources>
